@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <main class="flex flex-col items-center justify-center min-h-screen">
+        <header id="header" class="flex items-center justify-between mb-8 space-x-4">
+            <div class="player player-active" id="xPlayerDisplay" onclick="choosePlayer('X')">
+                X
+            </div>
+            <h3 id="titleHeader" class="text-lg font-bold animate-pulse">Choose</h3>
+            <div class="player" id="oPlayerDisplay" onclick="choosePlayer('O')">
+                O
+            </div>
+        </header>
+
+        <div id="board" class="grid grid-cols-3 gap-3">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <button id="restartBtn" class="mt-6 px-4 py-2 bg-gray-700 rounded-md font-medium transition hover:bg-gray-600">
+            Restart
+        </button>
+    </main>
+
+    <footer class="mt-auto p-2 text-center text-gray-500 text-sm">
+        <p class="text-sm font-light">
+            &copy; 2024 Soumya Byabarta | All rights reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
